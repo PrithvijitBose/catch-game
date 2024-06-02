@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid #000;
+    background-color: #87CEEB;
+}
+
+#basket {
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: #8B4513;
+    left: calc(50% - 50px);
+}
+
+#ball {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#score, #lives, #high-score {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+#score {
+    left: 10px;
+}
+
+#lives {
+    right: 10px;
+}
+
+#high-score {
+    left: 10px;
+    top: 40px;
+}
+
+button {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 50px);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#restart-btn, #pause-btn, #resume-btn {
+    display: none;
+}
+
+#leaderboard {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 100px);
+    width: 200px;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+#leaderboard h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+#leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboard li {
+    padding: 5px 0;
+    text-align: center;
+}
