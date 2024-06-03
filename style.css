@@ -90,3 +90,58 @@ button {
     padding: 5px 0;
     text-align: center;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #basket {
+        width: 80px;
+        height: 40px;
+        left: calc(50% - 40px);
+    }
+
+    #ball {
+        width: 25px;
+        height: 25px;
+    }
+
+    #score, #lives, #high-score {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #leaderboard {
+        left: calc(50% - 80px);
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    #basket {
+        width: 60px;
+        height: 30px;
+        left: calc(50% - 30px);
+    }
+
+    #ball {
+        width: 20px;
+        height: 20px;
+    }
+
+    #score, #lives, #high-score {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #leaderboard {
+        left: calc(50% - 60px);
+        width: 120px;
+    }
+}
